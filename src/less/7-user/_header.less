@@ -1,0 +1,44 @@
+.top {
+  margin-bottom: 10px;
+}
+
+.secondary-nav {
+  margin-top: 0;
+
+  li > a {
+    font-size: 12px;
+    text-transform: none;
+  }
+
+  &.navbar {
+    margin-bottom: 0;
+
+    border: none;
+    @media screen and (min-width: 768px) {
+      border-radius: 0;
+    }
+  }
+
+  .navbar-nav {
+    li > a {
+      color: @gray-dark;
+
+      &:not(:last-child) {
+        border-right: 1px solid #EEE;
+      }
+      &:hover {
+        color: @body-bg;
+        background-color: @brand-primary;
+      }
+      @media screen and (min-width: 768px) {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+    }
+  }
+}
+
+.navbar-column {
+  padding-left: 0;
+  padding-right: 0;
+}
